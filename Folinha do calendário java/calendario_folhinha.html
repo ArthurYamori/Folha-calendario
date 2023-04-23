@@ -1,0 +1,51 @@
+<BODY>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+<!-- Begin
+var Today=new Date();
+var ThisDay=Today.getDay();
+var ThisDate=Today.getDate();
+var ThisMonth=Today.getMonth()+1;
+var ThisYear=Today.getFullYear(); 
+function DayTxt (DayNumber) {
+var Day=new Array();
+Day[0]="Domingo";
+Day[1]="Segunda-feira";
+Day[2]="Terça-feira";
+Day[3]="Quarta-feira";
+Day[4]="Quinta-feira";
+Day[5]="Sexta-feira";
+Day[6]="Sábado";
+return Day[DayNumber];
+}
+var DayName=DayTxt(ThisDay);
+function MonthTxt (MonthNumber) {
+var Month=new Array();
+Month[1]="Janeiro";
+Month[2]="Fevereiro";
+Month[3]="Março";
+Month[4]="Abril";
+Month[5]="Maio";
+Month[6]="Junho";
+Month[7]="Julho";
+Month[8]="Agosto";
+Month[9]="Setembro";
+Month[10]="Outubro";
+Month[11]="Novembro";
+Month[12]="Dezembro";
+return Month[MonthNumber];
+}
+var MonthName=MonthTxt(ThisMonth);
+var d = new Date();
+var h = d.getHours();
+document.write("<TABLE BORDER=3 BGCOLOR=WHITE  WIDTH=75 HEIGHT=85 align=left>"+"<TD>"+"<p align=center>"+"<font size=-2 >"+DayName+"<br>"+"<font color=orangered size=+3 >"+ThisDate+"</font>"+"<br>"+MonthName+"<br>"+"</b>"+"</font>"+"</p>"+"</TD>"+"</TR>"+"</TABLE>");
+if (h < 2) document.write("<P ALIGN=center>"+"<b>"+"Good morning! Yes, it's way past midnight."+"</b>"+"</P>");
+else if (h < 3) document.write("<P ALIGN=center>"+"<b>"+"Good morning! Up early or working late?"+"</b>"+"</P>");
+else if (h < 7) document.write("<P ALIGN=center>"+"<b>"+"Bom dia! Up bright and early!"+"</b>"+"</P>");
+else if (h < 12) document.write("<P ALIGN=center>"+"<b>"+"Bom dia!"+"</b>"+"</P>");
+else if (h < 17) document.write("<P ALIGN=center>"+"<b>"+"Boa tarde!"+"</b>"+"</P>");
+else if (h < 23) document.write("<P ALIGN=center>"+"<b>"+"Boa noite!"+"</b>"+"</P>");
+else document.write("<P ALIGN=center>"+"<b>"+"A late good evening! Not much left of it now."+"</b>"+"</P>");
+//  End -->
+</script>
